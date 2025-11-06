@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package incrementor;
+
+service Incrementor {
+  rpc increment(Count) returns (Count) {}
+}
+
+message Count {
+  int32 count = 1;
+}
